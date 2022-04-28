@@ -1,7 +1,8 @@
-package demo.src.main.java.model;
+package com.example.demo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -10,7 +11,7 @@ import lombok.Data;
 @Table(name="project")
 @Data
 public class project {
-    @Column
+    @Id
     private String id;
     @Column
     private String name;
